@@ -28,7 +28,13 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/prismic',
   ],
+
+  prismic: {
+    endpoint: 'https://miguelmontalvo.cdn.prismic.io/api/v2',
+    modern: true,
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
