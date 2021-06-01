@@ -32,7 +32,7 @@ export default {
   ],
 
   prismic: {
-    endpoint: 'https://miguelmontalvo.cdn.prismic.io/api/v2',
+    endpoint: 'https://montalvomiguelo.cdn.prismic.io/api/v2',
     modern: true,
   },
 
