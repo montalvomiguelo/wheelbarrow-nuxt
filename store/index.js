@@ -1,25 +1,24 @@
 export const state = () => ({
-  mainNavigation: {},
+  layout: {},
 })
 
 export const mutations = {
-  SET_MAIN_NAVIGATION(state, mainNavigation) {
-    state.mainNavigation = mainNavigation
+  SET_LAYOUT(state, layout) {
+    state.layout = layout
   },
   SET_ERROR(state, error) {
-    state.mainNavigation = error
+    state.layout = error
   },
 }
 
 export const actions = {
-  async fetchMainNavigation({ commit }, $prismic) {
+  async fetchLayout({ commit }) {
     try {
-      const mainNavigation = (await $prismic.api.getSingle('main_navigation'))
-        .data
+      const layout = (await this.$prismic.api.getSingle('layout')).data
 
-      commit('SET_MAIN_NAVIGATION', mainNavigation)
+      commit('SET_LAYOUT', layout)
     } catch (e) {
-      const error = 'Please create a main_navigation document'
+      const error = 'Please create a layout document'
 
       commit('SET_ERROR', error)
     }
