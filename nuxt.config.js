@@ -38,14 +38,13 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module', // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/prismic',
   ],
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     [
       '@nuxtjs/prismic',
       {
-        endpoint: 'https://your-repo-name.cdn.prismic.io/api/v2',
+        endpoint: 'https://wheelbarrow.cdn.prismic.io/api/v2',
       },
     ],
     ['nuxt-sm'],
