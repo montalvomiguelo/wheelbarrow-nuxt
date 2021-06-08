@@ -1,0 +1,8 @@
+[
+  {
+    "id": "layout",
+    "name": "Layout",
+    "repeatable": false,
+    "value": "layout.json"
+  }
+]
