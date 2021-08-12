@@ -1,3 +1,5 @@
+const { getStoriesPaths } = require('slice-machine-ui/helpers/storybook')
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -54,7 +56,7 @@ export default {
     transpile: ['vue-slicezone', 'nuxt-sm'],
   },
   storybook: {
-    stories: ['~/slices/**/*.stories.js', '~/slices/**/*.stories.js'],
+    stories: [...getStoriesPaths()]
   },
   ignore: ['**/*.stories.js', '**/*.stories.js'],
 }
