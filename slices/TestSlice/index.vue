@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "TestSlice",
+  name: 'TestSlice',
   props: {
     slice: {
       type: Object,
