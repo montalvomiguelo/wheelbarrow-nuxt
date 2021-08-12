@@ -1,0 +1,41 @@
+{
+  "id": "layout",
+  "label": "Layout",
+  "repeatable": false,
+  "json": {
+    "Header": {
+      "logo": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Logo"
+        }
+      },
+      "menu_items": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name"
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "allowTargetBlank": true,
+                "label": "Link",
+                "select": null
+              }
+            }
+          },
+          "label": "Menu items"
+        }
+      }
+    }
+  },
+  "hash": "f8e937eea7571bc9cfcf1ef33306a5c4",
+  "status": true
+}
